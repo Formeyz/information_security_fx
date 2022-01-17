@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="527.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.information_security_fx.EncryptionController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane prefHeight="506.0" prefWidth="460.0">
+         <children>
+            <Label layoutX="160.0" layoutY="14.0" prefHeight="17.0" prefWidth="141.0" text="Введите исходный текст:" />
+            <TextField fx:id="plainTextTextField" layoutX="22.0" layoutY="39.0" prefHeight="25.0" prefWidth="417.0" />
+            <TextField fx:id="encodingTextField" editable="false" layoutX="22.0" layoutY="98.0" prefHeight="25.0" prefWidth="417.0" />
+            <Label fx:id="encodingTextLabel" layoutX="164.0" layoutY="72.0" prefHeight="17.0" prefWidth="133.0" text="Зашифрованный текст:" />
+             <Button layoutX="69.0" layoutY="138.0" onAction="#onEncryptionButtonClick" text="Зашифровать" />
+            <Button layoutX="301.0" layoutY="138.0" onAction="#onClearButtonClick" text="Очистить поля" />
+            <Button fx:id="decryptionButton" disable="true" layoutX="182.0" layoutY="138.0" onAction="#onDecryptionButtonClick" text="Расшифровать" />
+            <TextArea fx:id="detailedInfTextArea" layoutX="11.0" layoutY="249.0" prefHeight="229.0" prefWidth="438.0" visible="false" />
+            <Label fx:id="detailedInfLabel" layoutX="160.0" layoutY="221.0" text="Подробная информация:" visible="false" />
+            <Button fx:id="showHideButton" layoutX="124.0" layoutY="188.0" mnemonicParsing="false" onAction="#onShowHideButtonClick" text="Показать подробную информацию" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.example.information_security_fx.MainLauncher
+
